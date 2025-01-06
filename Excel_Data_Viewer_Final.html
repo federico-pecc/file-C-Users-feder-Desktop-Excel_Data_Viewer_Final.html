@@ -1,0 +1,2798 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Data Conversion Table</title>
+</head>
+<body>
+    <h1>Excel Data Viewer</h1>
+    <h2>Data Conversion Table</h2>
+    <div>
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        text-align: center;
+        border: 1px solid black;
+        padding: 8px;
+    }
+    th {
+        font-weight: bold;
+    }
+    td:nth-child(5), th:nth-child(5) {
+        width: 20%; /* Increase width for the ETS_Classification column */
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead style="font-weight: bold;">
+    <tr style="text-align: right;">
+      <th>ITEM7021</th>
+      <th>SIC87 Label</th>
+      <th>NACE2</th>
+      <th>NACE2 Label</th>
+      <th>ETS_Classification</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>111</td>
+      <td>Wheat farm</td>
+      <td>0111</td>
+      <td>Growing of cereals (except rice), leguminous crops and oil seeds</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>115</td>
+      <td>Corn farm</td>
+      <td>0110</td>
+      <td>Growing of non-perennial crops</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>119</td>
+      <td>Cash grains farm</td>
+      <td>0111</td>
+      <td>Growing of cereals (except rice), leguminous crops and oil seeds</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>181</td>
+      <td>Ornamental nursery</td>
+      <td>0130</td>
+      <td>Plant propagation</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>811</td>
+      <td>Timber tract operation</td>
+      <td>0220</td>
+      <td>Logging</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>1041</td>
+      <td>Gold ore mining</td>
+      <td>0729</td>
+      <td>Mining of other non-ferrous metal ores</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>1221</td>
+      <td>Bituminous coal/lignite surface mining</td>
+      <td>0520</td>
+      <td>Mining of lignite</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>1311</td>
+      <td>Bituminous coal/lignite surface mining</td>
+      <td>0610</td>
+      <td>Extraction of crude petroleum</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>1381</td>
+      <td>Oil/gas well drilling</td>
+      <td>0910</td>
+      <td>Support activities for petroleum and natural gas extraction</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>1389</td>
+      <td>Oil/gas field services</td>
+      <td>0910</td>
+      <td>Support activities for petroleum and natural gas extraction</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>1422</td>
+      <td>Crushed/broken limestone</td>
+      <td>0811</td>
+      <td>Quarrying of ornamental and building stone, limestone, gypsum, chalk and slate</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>1429</td>
+      <td>Crushed/broken stone</td>
+      <td>0811</td>
+      <td>Quarrying of ornamental and building stone, limestone, gypsum, chalk and slate</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>1442</td>
+      <td>Construction sand/gravel</td>
+      <td>0812</td>
+      <td>Operation of gravel and sand pits, mining of clays and kaolin</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>1481</td>
+      <td>Nonmetallic mineral services</td>
+      <td>0990</td>
+      <td>Support activities for other mining and quarrying</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>1499</td>
+      <td>Nonmetallic mineral mining</td>
+      <td>0899</td>
+      <td>Other mining and quarrying n.e.c.</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>1522</td>
+      <td>Residential construction</td>
+      <td>4120</td>
+      <td>Construction of residential and non-residential buildings</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>1531</td>
+      <td>Operative builders</td>
+      <td>4120</td>
+      <td>Construction of residential and non-residential buildings</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>1541</td>
+      <td>Industrial building construction</td>
+      <td>4120</td>
+      <td>Construction of residential and non-residential buildings</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>1542</td>
+      <td>Nonresidential construction</td>
+      <td>4120</td>
+      <td>Construction of residential and non-residential buildings</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>1600</td>
+      <td>Heavy Construction Other Than Building Construction - Contractors</td>
+      <td>4210</td>
+      <td>Construction of roads and railways</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>1611</td>
+      <td>Highway/street construction</td>
+      <td>4211</td>
+      <td>Construction of roads and motorways</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>1623</td>
+      <td>Water/sewer/utility construction</td>
+      <td>4221</td>
+      <td>Construction of utility projects for fluids</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>1629</td>
+      <td>Heavy construction</td>
+      <td>4110</td>
+      <td>Development of building projects</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>1711</td>
+      <td>Plumbing/heating/air cond contractor</td>
+      <td>4322</td>
+      <td>Plumbing, heat and air conditioning installation</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>1721</td>
+      <td>Painting/paper hanging contractor</td>
+      <td>4334</td>
+      <td>Painting and glazing</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>1742</td>
+      <td>Drywall/insulating contractor</td>
+      <td>4331</td>
+      <td>Plastering</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>1752</td>
+      <td>Floor laying contractor</td>
+      <td>4333</td>
+      <td>Floor and wall covering</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>1794</td>
+      <td>Excavation contractor</td>
+      <td>4312</td>
+      <td>Site preparation</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>1796</td>
+      <td>Building equipment installation</td>
+      <td>4329</td>
+      <td>Other construction installation</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2011</td>
+      <td>Meat packing plant</td>
+      <td>1013</td>
+      <td>Production of meat and poultry meat products</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2023</td>
+      <td>Mfg dry/evaporated dairy products</td>
+      <td>1086</td>
+      <td>Manufacture: homogenised food preparations and dietetic food</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2026</td>
+      <td>Mfg fluid milk</td>
+      <td>1051</td>
+      <td>Operation of dairies and cheese making</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2041</td>
+      <td>Mfg flour/grain mill prooducts</td>
+      <td>1061</td>
+      <td>Manufacture of grain mill products</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2043</td>
+      <td>Mfg cereal breakfast food</td>
+      <td>1083</td>
+      <td>Processing of tea and coffee</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2051</td>
+      <td>Mfg bread/related products</td>
+      <td>1071</td>
+      <td>Manufacture: bread, fresh pastry goods and cakes</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2063</td>
+      <td>Mfg beet sugar</td>
+      <td>1081</td>
+      <td>Manufacture of sugar</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2066</td>
+      <td>Mfg chocolate/cocoa products</td>
+      <td>1082</td>
+      <td>Manufacture: cocoa, chocolate and sugar confectionery</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2076</td>
+      <td>Vegetable oil mill</td>
+      <td>1041</td>
+      <td>Manufacture of oils and fats</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2079</td>
+      <td>Mfg edible fats/oils</td>
+      <td>1042</td>
+      <td>Manufacture: margarine and similar edible fats</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2082</td>
+      <td>Mfg malt beverages</td>
+      <td>1105</td>
+      <td>Manufacture of beer</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2084</td>
+      <td>Mfg wines/brandy/spirits</td>
+      <td>1102</td>
+      <td>Manufacture of wine from grape</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2085</td>
+      <td>Mfg distilled/blended liquor</td>
+      <td>1101</td>
+      <td>Distilling, rectifying and blending of spirits</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2086</td>
+      <td>Mfg bottled/canned soft drinks</td>
+      <td>1107</td>
+      <td>Manufacture: soft drinks, production of mineral waters and other bottled waters</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2092</td>
+      <td>Mfg fresh/frozen packaged fish</td>
+      <td>1020</td>
+      <td>Processing and preserving of fish, crustaceans and molluscs</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2095</td>
+      <td>Mfg roasted coffee</td>
+      <td>1083</td>
+      <td>Processing of tea and coffee</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2099</td>
+      <td>Mfg food preparations</td>
+      <td>1089</td>
+      <td>Manufacture of other food products n.e.c.</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2211</td>
+      <td>Cotton broadwoven fabric mill</td>
+      <td>1392</td>
+      <td>Manufacture: made-up textile articles, except apparel</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2221</td>
+      <td>Manmade broadwoven fabric mill</td>
+      <td>1320</td>
+      <td>Weaving of textiles</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2231</td>
+      <td>Wool broadwoven fabric mill</td>
+      <td>1320</td>
+      <td>Weaving of textiles</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2241</td>
+      <td>Narrow fabric mill</td>
+      <td>1396</td>
+      <td>Manufacture: other technical and industrial textiles</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2252</td>
+      <td>Mfg hosiery</td>
+      <td>1431</td>
+      <td>Manufacture: knitted and crocheted hosiery</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2269</td>
+      <td>Finishing plant</td>
+      <td>1330</td>
+      <td>Finishing of textiles</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2281</td>
+      <td>Yarn spinning mill</td>
+      <td>1310</td>
+      <td>Preparation and spinning of textile fibres</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2297</td>
+      <td>Mfg nonwoven fabrics</td>
+      <td>1395</td>
+      <td>Manufacture: non-wovens and articles made from non-wovens, except apparel</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2311</td>
+      <td>Mfg men's/boy's suits/coats</td>
+      <td>1413</td>
+      <td>Manufacture of other outerwear</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2329</td>
+      <td>Mfg men's/boy's clothing</td>
+      <td>1413</td>
+      <td>Manufacture of other outerwear</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2331</td>
+      <td>Mfg women's/misses' blouses</td>
+      <td>1413</td>
+      <td>Manufacture of other outerwear</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2337</td>
+      <td>Mfg women's/misses' suits/coats</td>
+      <td>1413</td>
+      <td>Manufacture of other outerwear</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2339</td>
+      <td>Mfg women's/misses' outerwear</td>
+      <td>1413</td>
+      <td>Manufacture of other outerwear</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2342</td>
+      <td>Mfg bras/girdles, etc</td>
+      <td>1414</td>
+      <td>Manufacture of underwear</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2389</td>
+      <td>Mfg apparel/accessories</td>
+      <td>1419</td>
+      <td>Manufacture: other wearing apparel and accessories</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2396</td>
+      <td>Mfg auto/apparel trimming</td>
+      <td>1399</td>
+      <td>Manufacture of other textiles n.e.c.</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2431</td>
+      <td>Mfg millwork</td>
+      <td>1610</td>
+      <td>Sawmilling and planing of wood</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2434</td>
+      <td>Mfg wood kitchen cabinets</td>
+      <td>3102</td>
+      <td>Manufacture of kitchen furniture</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2435</td>
+      <td>Mfg hardwood veneer/plywood</td>
+      <td>1621</td>
+      <td>Manufacture: veneer sheets and wood-based panels</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2452</td>
+      <td>Mfg prefabricated wood buildings</td>
+      <td>1623</td>
+      <td>Manufacture: other builders' carpentry and joinery</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2493</td>
+      <td>Mfg reconstituted wood products</td>
+      <td>1621</td>
+      <td>Manufacture: veneer sheets and wood-based panels</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2519</td>
+      <td>Mfg household furniture</td>
+      <td>3109</td>
+      <td>Manufacture of other furniture</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2521</td>
+      <td>Mfg wood office furniture</td>
+      <td>3101</td>
+      <td>Manufacture of office and shop furniture</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2621</td>
+      <td>Paper mill</td>
+      <td>1712</td>
+      <td>Manufacture of paper and paperboard</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2631</td>
+      <td>Paperboard mill</td>
+      <td>1721</td>
+      <td>Manufacture: corrugated paper and paperboard and of containers of paper and paperboard</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2671</td>
+      <td>Mfg packaging paper/film</td>
+      <td>1712</td>
+      <td>Manufacture of paper and paperboard</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2672</td>
+      <td>Mfg coated/laminated paper</td>
+      <td>1712</td>
+      <td>Manufacture of paper and paperboard</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2732</td>
+      <td>Book printing</td>
+      <td>1812</td>
+      <td>Other printing</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2741</td>
+      <td>Misc publishing</td>
+      <td>5819</td>
+      <td>Other publishing activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2754</td>
+      <td>Gravure commercial printing</td>
+      <td>1812</td>
+      <td>Other printing</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2813</td>
+      <td>Mfg industrial gases</td>
+      <td>2011</td>
+      <td>Manufacture of industrial gases</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2819</td>
+      <td>Mfg industrial inorganic chemicals</td>
+      <td>2013</td>
+      <td>Manufacture: other inorganic basic chemicals</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2821</td>
+      <td>Mfg plastic materials/resins</td>
+      <td>2016</td>
+      <td>Manufacture of plastics in primary forms</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2824</td>
+      <td>Mfg organic fiber-noncellulosic</td>
+      <td>2060</td>
+      <td>Manufacture of man-made fibres</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2833</td>
+      <td>Mfg medicinal/botanical products</td>
+      <td>2110</td>
+      <td>Manufacture: basic pharmaceutical products</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2834</td>
+      <td>Mfg pharmaceutical preparations</td>
+      <td>2120</td>
+      <td>Manufacture of pharmaceutical preparations</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2835</td>
+      <td>Mfg diagnostic substances</td>
+      <td>2120</td>
+      <td>Manufacture of pharmaceutical preparations</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2836</td>
+      <td>Mfg biological products</td>
+      <td>2120</td>
+      <td>Manufacture of pharmaceutical preparations</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2842</td>
+      <td>Mfg polish/sanitation goods</td>
+      <td>2041</td>
+      <td>Manufacture: soap and detergents, cleaning and polishing preparations</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2844</td>
+      <td>Mfg toilet preparations</td>
+      <td>2042</td>
+      <td>Manufacture: perfumes and toilet preparations</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2851</td>
+      <td>Mfg paints/allied products</td>
+      <td>2030</td>
+      <td>Manufacture: paints, varnishes and similar coatings, printing ink and mastics</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2869</td>
+      <td>Mfg industrial organic chemicals</td>
+      <td>2014</td>
+      <td>Manufacture: other organic basic chemicals</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2873</td>
+      <td>Mfg nitrogenous fertilizers</td>
+      <td>2015</td>
+      <td>Manufacture: fertilisers and nitrogen compounds</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2891</td>
+      <td>Mfg adhesives/sealants</td>
+      <td>2052</td>
+      <td>Manufacture of glues</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2899</td>
+      <td>Mfg chemical preparations</td>
+      <td>2059</td>
+      <td>Manufacture: other chemical products n.e.c.</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2911</td>
+      <td>Petroleum refiner</td>
+      <td>1920</td>
+      <td>Manufacture of refined petroleum products</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2992</td>
+      <td>Mfg lubricating oils/greases</td>
+      <td>1920</td>
+      <td>Manufacture of refined petroleum products</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>2999</td>
+      <td>Mfg petroleum/coal products</td>
+      <td>1920</td>
+      <td>Manufacture of refined petroleum products</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3011</td>
+      <td>Mfg tires/inner tubes</td>
+      <td>2211</td>
+      <td>Manufacture: rubber tyres and tubes, retreading and rebuilding of rubber tyres</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3021</td>
+      <td>Mfg rubber/plastic footwear</td>
+      <td>1520</td>
+      <td>Manufacture of footwear</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3052</td>
+      <td>Mfg rubber/plastic hose/belting</td>
+      <td>2221</td>
+      <td>Manufacture: plastic plates, sheets, tubes and profiles</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3061</td>
+      <td>Mfg mechanical rubber goods</td>
+      <td>2219</td>
+      <td>Manufacture of other rubber products</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3069</td>
+      <td>Mfg fabricated rubber products</td>
+      <td>2219</td>
+      <td>Manufacture of other rubber products</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3081</td>
+      <td>Mfg unsupported plastic film/sheet</td>
+      <td>2221</td>
+      <td>Manufacture: plastic plates, sheets, tubes and profiles</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3083</td>
+      <td>Mfg laminated plastic plate/sheet</td>
+      <td>2221</td>
+      <td>Manufacture: plastic plates, sheets, tubes and profiles</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3086</td>
+      <td>Mfg plastic foam products</td>
+      <td>2222</td>
+      <td>Manufacture of plastic packing goods</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3088</td>
+      <td>Mfg plastic plumbing fixtures</td>
+      <td>2223</td>
+      <td>Manufacture of builders' ware of plastic</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3089</td>
+      <td>Mfg plastic products</td>
+      <td>2223</td>
+      <td>Manufacture of builders' ware of plastic</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3149</td>
+      <td>Mfg footwear-except rubber</td>
+      <td>1520</td>
+      <td>Manufacture of footwear</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3171</td>
+      <td>Mfg women's handbags/purses</td>
+      <td>1512</td>
+      <td>Manufacture: luggage, handbags and the like, saddlery and harness</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3199</td>
+      <td>Mfg leather goods</td>
+      <td>1512</td>
+      <td>Manufacture: luggage, handbags and the like, saddlery and harness</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3211</td>
+      <td>Mfg flat glass</td>
+      <td>2311</td>
+      <td>Manufacture of flat glass</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3221</td>
+      <td>Mfg glass containers</td>
+      <td>2313</td>
+      <td>Manufacture of hollow glass</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3241</td>
+      <td>Mfg hydraulic cement</td>
+      <td>2351</td>
+      <td>Manufacture of cement</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3253</td>
+      <td>Mfg ceramic wall/floor tile</td>
+      <td>2331</td>
+      <td>Manufacture of ceramic tiles and flags</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3261</td>
+      <td>Mfg vitreous plumbing fixtures</td>
+      <td>2342</td>
+      <td>Manufacture of ceramic sanitary fixtures</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3269</td>
+      <td>Mfg pottery products</td>
+      <td>2341</td>
+      <td>Manufacture: ceramic household and ornamental articles</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3291</td>
+      <td>Mfg abrasive products</td>
+      <td>2391</td>
+      <td>Production of abrasive products</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3296</td>
+      <td>Mfg mineral wool</td>
+      <td>2399</td>
+      <td>Manufacture: other non-metallic mineral products n.e.c.</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3297</td>
+      <td>Mfg nonclay refractories</td>
+      <td>2399</td>
+      <td>Manufacture: other non-metallic mineral products n.e.c.</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3312</td>
+      <td>Blast furnace-steel works</td>
+      <td>2410</td>
+      <td>Manufacture: basic iron and steel and of ferro-alloys</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3316</td>
+      <td>Mfg cold-rolled steel shapes</td>
+      <td>2433</td>
+      <td>Cold forming or folding</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3334</td>
+      <td>Primary aluminum producer</td>
+      <td>2442</td>
+      <td>Aluminium production</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3341</td>
+      <td>Secondary nonferrous metal producer</td>
+      <td>3832</td>
+      <td>Recovery of sorted materials</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3351</td>
+      <td>opper rolling/drawing</td>
+      <td>2444</td>
+      <td>Copper production</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3356</td>
+      <td>Nonferrous rolling/drawing</td>
+      <td>2443</td>
+      <td>Lead, zinc and tin production</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3411</td>
+      <td>Mfg metal cans</td>
+      <td>2592</td>
+      <td>Manufacture of light metal packaging</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3421</td>
+      <td>Mfg cutlery</td>
+      <td>2571</td>
+      <td>Manufacture of cutlery</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3423</td>
+      <td>Mfg hand/edge tools</td>
+      <td>2573</td>
+      <td>Manufacture of tools</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3432</td>
+      <td>Mfg plumbing fixture fittings</td>
+      <td>2814</td>
+      <td>Manufacture of other taps and valves</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3433</td>
+      <td>Mfg heating equipment-nonelectric</td>
+      <td>2521</td>
+      <td>Manufacture: central heating radiators and boilers</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3442</td>
+      <td>Mfg metal doors/sash/trim</td>
+      <td>2512</td>
+      <td>Manufacture of doors and windows of metal</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3446</td>
+      <td>Mfg architectural metalwork</td>
+      <td>2512</td>
+      <td>Manufacture of doors and windows of metal</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3451</td>
+      <td>Mfg screw machine products</td>
+      <td>2594</td>
+      <td>Manufacture: fasteners and screw machine products</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3452</td>
+      <td>Mfg bolts/screws/rivets</td>
+      <td>2594</td>
+      <td>Manufacture: fasteners and screw machine products</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3462</td>
+      <td>Mfg iron/steel forgings</td>
+      <td>2420</td>
+      <td>Manufacture: tubes, pipes, hollow profiles and related fittings, of steel</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3465</td>
+      <td>Mfg automotive stampings</td>
+      <td>2550</td>
+      <td>Forging, pressing, stamping and roll-forming of metal, powder metallurgy</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3471</td>
+      <td>Plating/polishing service</td>
+      <td>2561</td>
+      <td>Treatment and coating of metals</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3479</td>
+      <td>Coating/engraving service</td>
+      <td>2561</td>
+      <td>Treatment and coating of metals</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3482</td>
+      <td>Mfg small arms ammunition</td>
+      <td>2540</td>
+      <td>Manufacture of weapons and ammunition</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3493</td>
+      <td>Mfg steel springs-nonwire</td>
+      <td>2593</td>
+      <td>Manufacture: wire products, chain and springs</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3499</td>
+      <td>Mfg misc fabricated metal products</td>
+      <td>2599</td>
+      <td>Manufacture: other fabricated metal products n.e.c.</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3511</td>
+      <td>Mfg turbines/generator sets</td>
+      <td>2811</td>
+      <td>Manufacture: engines and turbines, except aircraft, vehicle and cycle engines</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3519</td>
+      <td>Mfg internal combustion engines</td>
+      <td>2811</td>
+      <td>Manufacture: engines and turbines, except aircraft, vehicle and cycle engines</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3523</td>
+      <td>Mfg farm machinery/equipment</td>
+      <td>2830</td>
+      <td>Manufacture: agricultural and forestry machinery</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3524</td>
+      <td>Mfg lawn/garden equipment</td>
+      <td>2830</td>
+      <td>Manufacture: agricultural and forestry machinery</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3531</td>
+      <td>Mfg construction machinery</td>
+      <td>2892</td>
+      <td>Manufacture: machinery for mining, quarrying and construction</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3532</td>
+      <td>Mfg mining machinery</td>
+      <td>2892</td>
+      <td>Manufacture: machinery for mining, quarrying and construction</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3537</td>
+      <td>Mfg industrial trucks/tractors</td>
+      <td>2822</td>
+      <td>Manufacture: lifting and handling equipment</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3541</td>
+      <td>Mfg machine tools-cutting</td>
+      <td>2573</td>
+      <td>Manufacture of tools</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3542</td>
+      <td>Mfg machine tools-forming</td>
+      <td>2530</td>
+      <td>Manufacture: steam generators, except central heating hot water boilers</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3545</td>
+      <td>Mfg machine tool accessories</td>
+      <td>2800</td>
+      <td>Manufacture: machinery and equipment n.e.c.</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3546</td>
+      <td>Mfg power-driven handtools</td>
+      <td>2824</td>
+      <td>Manufacture of power-driven hand tools</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3548</td>
+      <td>Mfg welding apparatus</td>
+      <td>2849</td>
+      <td>Manufacture of other machine tools</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3553</td>
+      <td>Mfg woodworking machinery</td>
+      <td>2899</td>
+      <td>Manufacture: other special-purpose machinery n.e.c.</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3554</td>
+      <td>Mfg paper industrial machinery</td>
+      <td>2895</td>
+      <td>Manufacture: machinery for paper and paperboard production</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3555</td>
+      <td>Mfg printing trades machinery</td>
+      <td>1813</td>
+      <td>Pre-press and pre-media services</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3556</td>
+      <td>Mfg food products machinery</td>
+      <td>2893</td>
+      <td>Manufacture: machinery for food, beverage and tobacco processing</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3559</td>
+      <td>Mfg misc industry machinery</td>
+      <td>2896</td>
+      <td>Manufacture: plastic and rubber machinery</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3561</td>
+      <td>Mfg pumps/pumping equipment</td>
+      <td>2813</td>
+      <td>Manufacture of other pumps and compressors</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3563</td>
+      <td>Mfg air/gas compressors</td>
+      <td>2813</td>
+      <td>Manufacture of other pumps and compressors</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3565</td>
+      <td>Mfg packaging machinery</td>
+      <td>2899</td>
+      <td>Manufacture: other special-purpose machinery n.e.c.</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3566</td>
+      <td>Mfg speed changers/drives</td>
+      <td>2815</td>
+      <td>Manufacture: bearings, gears, gearing and driving elements</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3568</td>
+      <td>Mfg power transmission equipment</td>
+      <td>2815</td>
+      <td>Manufacture: bearings, gears, gearing and driving elements</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3569</td>
+      <td>Mfg general industrial machinery</td>
+      <td>2829</td>
+      <td>Manufacture: other general-purpose machinery n.e.c.</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3571</td>
+      <td>Mfg electronic computers</td>
+      <td>2620</td>
+      <td>Manufacture: computers and peripheral equipment</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3577</td>
+      <td>Mfg computer peripheral equipment</td>
+      <td>2620</td>
+      <td>Manufacture: computers and peripheral equipment</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3589</td>
+      <td>Mfg service industry machinery</td>
+      <td>2829</td>
+      <td>Manufacture: other general-purpose machinery n.e.c.</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3594</td>
+      <td>Mfg fluid power pumps/motors</td>
+      <td>2813</td>
+      <td>Manufacture of other pumps and compressors</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3599</td>
+      <td>Mfg industrial machinery</td>
+      <td>2829</td>
+      <td>Manufacture: other general-purpose machinery n.e.c.</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3612</td>
+      <td>Mfg transformers</td>
+      <td>2712</td>
+      <td>Manufacture: electricity distribution and control apparatus</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3613</td>
+      <td>Mfg switchgear/switchboards</td>
+      <td>2712</td>
+      <td>Manufacture: electricity distribution and control apparatus</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3621</td>
+      <td>Mfg motors/generators</td>
+      <td>2711</td>
+      <td>Manufacture: electric motors, generators and transformers</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3624</td>
+      <td>Mfg carbon/graphite products</td>
+      <td>2399</td>
+      <td>Manufacture: other non-metallic mineral products n.e.c.</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3625</td>
+      <td>Mfg relays/industrial controls</td>
+      <td>2712</td>
+      <td>Manufacture: electricity distribution and control apparatus</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3634</td>
+      <td>Mfg electric housewares/fans</td>
+      <td>2751</td>
+      <td>Manufacture: electric domestic appliances</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3645</td>
+      <td>Mfg residential lighting fixtures</td>
+      <td>2740</td>
+      <td>Manufacture of electric lighting equipment</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3646</td>
+      <td>Mfg commercial lighting fixtures</td>
+      <td>2740</td>
+      <td>Manufacture of electric lighting equipment</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3647</td>
+      <td>Mfg vehicle lighting equipment</td>
+      <td>2740</td>
+      <td>Manufacture of electric lighting equipment</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3648</td>
+      <td>Mfg lighting equipment</td>
+      <td>2740</td>
+      <td>Manufacture of electric lighting equipment</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3651</td>
+      <td>Mfg home audio/video equipment</td>
+      <td>2640</td>
+      <td>Manufacture of consumer electronics</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3652</td>
+      <td>Mfg prerecorded records/tapes</td>
+      <td>1820</td>
+      <td>Reproduction of recorded media</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3661</td>
+      <td>Mfg telephone/telegraph apparatus</td>
+      <td>2630</td>
+      <td>Manufacture of communication equipment</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3663</td>
+      <td>Mfg radio/tv communication equipment</td>
+      <td>2640</td>
+      <td>Manufacture of consumer electronics</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3669</td>
+      <td>Mfg communications equipment</td>
+      <td>2630</td>
+      <td>Manufacture of communication equipment</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3672</td>
+      <td>Mfg printed circuit boards</td>
+      <td>2610</td>
+      <td>Manufacture: electronic components and boards</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3674</td>
+      <td>Mfg semiconductors/related devices</td>
+      <td>2610</td>
+      <td>Manufacture: electronic components and boards</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3675</td>
+      <td>Mfg electronic capacitors</td>
+      <td>2610</td>
+      <td>Manufacture: electronic components and boards</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3677</td>
+      <td>Mfg electronic coils/transformers</td>
+      <td>2711</td>
+      <td>Manufacture: electric motors, generators and transformers</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3679</td>
+      <td>Mfg electronic components</td>
+      <td>2611</td>
+      <td>Manufacture of electronic components</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3691</td>
+      <td>Mfg storage batteries</td>
+      <td>2720</td>
+      <td>Manufacture of batteries and accumulators</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3694</td>
+      <td>Mfg engine electrical equipment</td>
+      <td>2931</td>
+      <td>Manufacture: electrical and electronic equipment for motor vehicles</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3695</td>
+      <td>Mfg magnetic/optical recording media</td>
+      <td>2680</td>
+      <td>Manufacture of magnetic and optical media</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3699</td>
+      <td>Mfg electrical equipment/supplies</td>
+      <td>2790</td>
+      <td>Manufacture of other electrical equipment</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3711</td>
+      <td>Mfg motor vehicle/car bodies</td>
+      <td>2910</td>
+      <td>Manufacture of motor vehicles</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3714</td>
+      <td>Mfg motor vehicle parts/accessories</td>
+      <td>2932</td>
+      <td>Manufacture: other parts and accessories for motor vehicles</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3721</td>
+      <td>Mfg aircraft</td>
+      <td>3030</td>
+      <td>Manufacture: air and spacecraft and related machinery</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3724</td>
+      <td>Mfg aircraft</td>
+      <td>3030</td>
+      <td>Manufacture: air and spacecraft and related machinery</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3732</td>
+      <td>Boatbuilding/repairing</td>
+      <td>3012</td>
+      <td>Building of pleasure and sporting boats</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3743</td>
+      <td>Mfg railroad equipment</td>
+      <td>3020</td>
+      <td>Manufacture: railway locomotives and rolling stock</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3751</td>
+      <td>Mfg motorcycles/bicycles</td>
+      <td>3090</td>
+      <td>Manufacture of transport equipment n.e.c.</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3792</td>
+      <td>Mfg travel trailers/campers</td>
+      <td>2920</td>
+      <td>Manufacture: bodies (coachwork) for motor vehicles, Manufacture: trailers and semi-trailers</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3812</td>
+      <td>Mfg search/navigation equipment</td>
+      <td>2651</td>
+      <td>Manufacture: instruments and appliances for measuring, testing and navigation</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3821</td>
+      <td>Mfg lab apparatus/furniture</td>
+      <td>2651</td>
+      <td>Manufacture: instruments and appliances for measuring, testing and navigation</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3823</td>
+      <td>Mfg process control instruments</td>
+      <td>2651</td>
+      <td>Manufacture: instruments and appliances for measuring, testing and navigation</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3824</td>
+      <td>Mfg fluid meter/counting devices</td>
+      <td>2651</td>
+      <td>Manufacture: instruments and appliances for measuring, testing and navigation</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3825</td>
+      <td>Mfg electrical measuring instruments</td>
+      <td>2651</td>
+      <td>Manufacture: instruments and appliances for measuring, testing and navigation</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3826</td>
+      <td>Mfg analytical instruments</td>
+      <td>2651</td>
+      <td>Manufacture: instruments and appliances for measuring, testing and navigation</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3827</td>
+      <td>Mfg optical instruments/lenses</td>
+      <td>2670</td>
+      <td>Manufacture: optical instruments and photographic equipment</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3829</td>
+      <td>Mfg measuring/controlling devices</td>
+      <td>2651</td>
+      <td>Manufacture: instruments and appliances for measuring, testing and navigation</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3841</td>
+      <td>Mfg surgical/medical instruments</td>
+      <td>3250</td>
+      <td>Manufacture: medical and dental instruments and supplies</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3842</td>
+      <td>Mfg surgical appliances/supplies</td>
+      <td>3299</td>
+      <td>Other manufacturing n.e.c.</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3843</td>
+      <td>Mfg dental equipment/supplies</td>
+      <td>3250</td>
+      <td>Manufacture: medical and dental instruments and supplies</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3845</td>
+      <td>Mfg electromedical equipment</td>
+      <td>3250</td>
+      <td>Manufacture: medical and dental instruments and supplies</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3851</td>
+      <td>Mfg ophthalmic goods</td>
+      <td>3250</td>
+      <td>Manufacture: medical and dental instruments and supplies</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3861</td>
+      <td>Mfg photographic equipment/supplies</td>
+      <td>2670</td>
+      <td>Manufacture: optical instruments and photographic equipment</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3911</td>
+      <td>Mfg precious metal jewelry</td>
+      <td>3212</td>
+      <td>Manufacture: jewellery and related articles</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3931</td>
+      <td>Mfg musical instruments</td>
+      <td>3220</td>
+      <td>Manufacture of musical instruments</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3944</td>
+      <td>Mfg games/toys</td>
+      <td>3240</td>
+      <td>Manufacture of games and toys</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3951</td>
+      <td>Mfg pens/mechanical pencils</td>
+      <td>3299</td>
+      <td>Other manufacturing n.e.c.</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3991</td>
+      <td>Mfg brooms/brushes</td>
+      <td>3291</td>
+      <td>Manufacture of brooms and brushes</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>3999</td>
+      <td>Mfg misc products</td>
+      <td>3299</td>
+      <td>Other manufacturing n.e.c.</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4011</td>
+      <td>Railroad line-haul operator</td>
+      <td>4920</td>
+      <td>Freight rail transport</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4013</td>
+      <td>Rail switching/terminal services</td>
+      <td>5221</td>
+      <td>Service activities incidental to land transportation</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4111</td>
+      <td>Local/suburban transportation</td>
+      <td>4931</td>
+      <td>Urban and suburban passenger land transport</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4131</td>
+      <td>Intercity/rural bus line</td>
+      <td>4931</td>
+      <td>Urban and suburban passenger land transport</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4212</td>
+      <td>Local trucking operator</td>
+      <td>4942</td>
+      <td>Removal services</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4215</td>
+      <td>Courier service</td>
+      <td>5320</td>
+      <td>Other postal and courier activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4222</td>
+      <td>Refrigeration warehouse/storage</td>
+      <td>5210</td>
+      <td>Warehousing and storage</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4225</td>
+      <td>General warehouse/storage</td>
+      <td>5210</td>
+      <td>Warehousing and storage</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4311</td>
+      <td>U.S. Postal Service</td>
+      <td>5310</td>
+      <td>Postal activities under universal service obligation</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4412</td>
+      <td>Foreign sea freight transportation</td>
+      <td>5222</td>
+      <td>Service activities incidental to water transportation</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4489</td>
+      <td>Water passenger transportation</td>
+      <td>5030</td>
+      <td>Inland passenger water transport</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4491</td>
+      <td>Marine cargo handler</td>
+      <td>5224</td>
+      <td>Cargo handling</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4512</td>
+      <td>Scheduled air transportation</td>
+      <td>5110</td>
+      <td>Passenger air transport</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4522</td>
+      <td>Nonscheduled air transportation</td>
+      <td>5110</td>
+      <td>Passenger air transport</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4581</td>
+      <td>Airport/airport services</td>
+      <td>5223</td>
+      <td>Service activities incidental to air transportation</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4724</td>
+      <td>Travel agency</td>
+      <td>7911</td>
+      <td>Travel agency activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4725</td>
+      <td>Tour operator</td>
+      <td>7912</td>
+      <td>Tour operator activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4729</td>
+      <td>Passenger transportation arrangement</td>
+      <td>7911</td>
+      <td>Travel agency activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4731</td>
+      <td>Freight transportation arrangement</td>
+      <td>5229</td>
+      <td>Other transportation support activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4810</td>
+      <td>Telephone communications</td>
+      <td>6110</td>
+      <td>Wired telecommunications activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4812</td>
+      <td>Radiotelephone communication</td>
+      <td>6120</td>
+      <td>Wireless telecommunications activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4813</td>
+      <td>Telephone communications</td>
+      <td>6110</td>
+      <td>Wired telecommunications activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4833</td>
+      <td>Television station</td>
+      <td>5911</td>
+      <td>Motion picture, video and television programme production activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4841</td>
+      <td>Cable/pay television servic</td>
+      <td>6190</td>
+      <td>Other telecommunications activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4899</td>
+      <td>Communication services</td>
+      <td>6190</td>
+      <td>Other telecommunications activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4911</td>
+      <td>Electric services</td>
+      <td>3510</td>
+      <td>Electric power generation, transmission and distribution</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4923</td>
+      <td>Gas transmission/distribution</td>
+      <td>3520</td>
+      <td>Manufacture: gas, distribution of gaseous fuels through mains</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4924</td>
+      <td>Natural gas distribution</td>
+      <td>3523</td>
+      <td>Trade of gas through mains</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4931</td>
+      <td>Electric and other services combined</td>
+      <td>3530</td>
+      <td>Steam and air conditioning supply</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4932</td>
+      <td>Gas and other services combined</td>
+      <td>3520</td>
+      <td>Manufacture: gas, distribution of gaseous fuels through mains</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4941</td>
+      <td>Water supply service</td>
+      <td>3600</td>
+      <td>Water collection, treatment and supply</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4953</td>
+      <td>Refuse system</td>
+      <td>3811</td>
+      <td>Collection of non-hazardous waste</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4959</td>
+      <td>Sanitary services</td>
+      <td>3900</td>
+      <td>Remediation activities and other waste management services</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>4961</td>
+      <td>Steam/air-conditioning supply</td>
+      <td>3530</td>
+      <td>Steam and air conditioning supply</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5012</td>
+      <td>Whol autos/motor vehicles</td>
+      <td>4519</td>
+      <td>Sale of other motor vehicles</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5013</td>
+      <td>Whol auto parts/supplies</td>
+      <td>4531</td>
+      <td>Wholesale trade of motor vehicle parts and accessories</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5043</td>
+      <td>Whol photo equipment/supplies</td>
+      <td>4643</td>
+      <td>Wholesale of electrical household appliances</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5044</td>
+      <td>Whol office equipment</td>
+      <td>4666</td>
+      <td>Wholesale of other office machinery and equipment</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5045</td>
+      <td>Whol computers/peripherals</td>
+      <td>4651</td>
+      <td>Wholesale of computers, computer peripheral equipment and software</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5051</td>
+      <td>Metals service center</td>
+      <td>4672</td>
+      <td>Wholesale of metals and metal ores</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5052</td>
+      <td>Whol coal/minerals/ores</td>
+      <td>4672</td>
+      <td>Wholesale of metals and metal ores</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5063</td>
+      <td>Whol electrical equipment</td>
+      <td>4652</td>
+      <td>Wholesale of electronic and telecommunications equipment and parts</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5065</td>
+      <td>Whol electronic parts/equipment</td>
+      <td>4652</td>
+      <td>Wholesale of electronic and telecommunications equipment and parts</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5072</td>
+      <td>Whol hardware</td>
+      <td>4674</td>
+      <td>Wholesale of hardware, plumbing and heating equipment and supplies</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5082</td>
+      <td>Whol construction/mining equipment</td>
+      <td>4663</td>
+      <td>Wholesale of mining, construction and civil engineering machinery</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5083</td>
+      <td>Whol farm/garden machinery</td>
+      <td>4661</td>
+      <td>Wholesale of agricultural machinery, equipment and supplies</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5084</td>
+      <td>Whol industrial equipment</td>
+      <td>4669</td>
+      <td>Wholesale of other machinery and equipment</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5088</td>
+      <td>Whol transportation equipment</td>
+      <td>4614</td>
+      <td>Agents involved in the sale of machinery, industrial equipment, ships and aircraft</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5093</td>
+      <td>Whol scrap/waste material</td>
+      <td>4677</td>
+      <td>Wholesale of waste and scrap</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5094</td>
+      <td>Whol jewelry/precious stones</td>
+      <td>4648</td>
+      <td>Wholesale of watches and jewellery</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5099</td>
+      <td>Whol durable goods</td>
+      <td>4690</td>
+      <td>Non-specialised wholesale trade</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5122</td>
+      <td>Whol drugs/sundries</td>
+      <td>4646</td>
+      <td>Wholesale of pharmaceutical goods</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5137</td>
+      <td>Whol women's/child's clothing</td>
+      <td>4642</td>
+      <td>Wholesale of clothing and footwear</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5139</td>
+      <td>Whol footwear</td>
+      <td>4642</td>
+      <td>Wholesale of clothing and footwear</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5141</td>
+      <td>Whol general groceries</td>
+      <td>4639</td>
+      <td>Non-specialised wholesale of food, beverages and tobacco</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5143</td>
+      <td>Whol dairy products</td>
+      <td>4633</td>
+      <td>Wholesale of dairy products, eggs and edible oils and fats</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5145</td>
+      <td>Whol confectionery</td>
+      <td>4636</td>
+      <td>Wholesale of sugar and chocolate and sugar confectionery</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5148</td>
+      <td>Whol fruits/vegetables</td>
+      <td>4631</td>
+      <td>Wholesale of fruit and vegetables</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5149</td>
+      <td>Whol groceries</td>
+      <td>4637</td>
+      <td>Wholesale of coffee, tea, cocoa and spices</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5153</td>
+      <td>Whol grain/field beans</td>
+      <td>4621</td>
+      <td>Wholesale of grain, unmanufactured tobacco, seeds and animal feeds</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5169</td>
+      <td>Whol chemicals/products</td>
+      <td>4675</td>
+      <td>Wholesale of chemical products</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5172</td>
+      <td>Whol petroleum products</td>
+      <td>4671</td>
+      <td>Wholesale of solid, liquid and gaseous fuels and related products</td>
+      <td>Inside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5181</td>
+      <td>Whol beer/ale</td>
+      <td>4634</td>
+      <td>Wholesale of beverages</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5182</td>
+      <td>Whol wine/distilled beverages</td>
+      <td>4634</td>
+      <td>Wholesale of beverages</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5211</td>
+      <td>Ret lumber/building materials</td>
+      <td>4752</td>
+      <td>Retail sale of hardware, paints and glass in specialised stores</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5311</td>
+      <td>Department store</td>
+      <td>4719</td>
+      <td>Other retail sale in non-specialised stores</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5411</td>
+      <td>Ret groceries</td>
+      <td>4711</td>
+      <td>Retail sale in non-specialised stores with food, beverages or tobacco predominating</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5499</td>
+      <td>Ret misc foods</td>
+      <td>4729</td>
+      <td>Other retail sale of food in specialised stores</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5511</td>
+      <td>Ret new/used automobiles</td>
+      <td>4511</td>
+      <td>Sale of cars and light motor vehicles</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5571</td>
+      <td>Ret motorcycles</td>
+      <td>4540</td>
+      <td>Sale, maintenance and repair of motorcycles and related parts and accessories</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5651</td>
+      <td>Ret family clothing</td>
+      <td>4771</td>
+      <td>Retail sale of clothing in specialised stores</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5661</td>
+      <td>Ret shoes</td>
+      <td>4772</td>
+      <td>Retail sale of footwear and leather goods in specialised stores</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5712</td>
+      <td>Ret furniture</td>
+      <td>4759</td>
+      <td>Retail sale of furniture, lighting equipment and other household articles in specialised stores</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5713</td>
+      <td>Ret floor covering</td>
+      <td>4753</td>
+      <td>Retail sale of carpets, rugs, wall and floor coverings in specialised stores</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5722</td>
+      <td>Ret household appliances</td>
+      <td>4754</td>
+      <td>Retail sale of electrical household appliances in specialised stores</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5734</td>
+      <td>Ret computers/software</td>
+      <td>4741</td>
+      <td>Retail sale of computers, peripheral units and software in specialised stores</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5812</td>
+      <td>Eating place</td>
+      <td>5610</td>
+      <td>Restaurants and mobile food service activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5932</td>
+      <td>Ret used merchandise</td>
+      <td>4779</td>
+      <td>Retail sale of second-hand goods in stores</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5941</td>
+      <td>Ret sporting goods/bicycles</td>
+      <td>4764</td>
+      <td>Retail sale of sporting equipment in specialised stores</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5942</td>
+      <td>Ret books</td>
+      <td>4761</td>
+      <td>Retail sale of books in specialised stores</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5944</td>
+      <td>Ret jewelry</td>
+      <td>4777</td>
+      <td>Retail sale of watches and jewellery in specialised stores</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5961</td>
+      <td>Ret mail-order house</td>
+      <td>4791</td>
+      <td>Retail sale via mail order houses or via Internet</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5995</td>
+      <td>Ret optical goods</td>
+      <td>4778</td>
+      <td>Other retail sale of new goods in specialised stores</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>5999</td>
+      <td>Ret misc merchandise</td>
+      <td>4776</td>
+      <td>Retail sale of flowers, plants, seeds, fertilisers, pet animals and pet food in specialised stores</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6011</td>
+      <td>Federal reserve bank</td>
+      <td>6411</td>
+      <td>Central banking</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6021</td>
+      <td>National commercial bank</td>
+      <td>6419</td>
+      <td>Other monetary intermediation</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6022</td>
+      <td>State commercial bank</td>
+      <td>6419</td>
+      <td>Other monetary intermediation</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6029</td>
+      <td>Commercial bank</td>
+      <td>6419</td>
+      <td>Other monetary intermediation</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6030</td>
+      <td>Savings institutions</td>
+      <td>6419</td>
+      <td>Other monetary intermediation</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6035</td>
+      <td>Federal savings institution</td>
+      <td>6419</td>
+      <td>Other monetary intermediation</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6036</td>
+      <td>Savings institution</td>
+      <td>6419</td>
+      <td>Other monetary intermediation</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6099</td>
+      <td>Depository banking services</td>
+      <td>6419</td>
+      <td>Other monetary intermediation</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6111</td>
+      <td>Federal credit agency</td>
+      <td>6492</td>
+      <td>Other credit granting</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6141</td>
+      <td>Personal credit institution</td>
+      <td>6492</td>
+      <td>Other credit granting</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6153</td>
+      <td>Short-term business credit institution</td>
+      <td>6499</td>
+      <td>Other financial service activities, except insurance and pension funding n.e.c.</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6159</td>
+      <td>Misc business credit institutions</td>
+      <td>6491</td>
+      <td>Financial leasing</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6162</td>
+      <td>Mortgage banker/correspondent</td>
+      <td>6492</td>
+      <td>Other credit granting</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6163</td>
+      <td>Loan broker</td>
+      <td>6492</td>
+      <td>Other credit granting</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6211</td>
+      <td>Loan broker</td>
+      <td>6492</td>
+      <td>Other credit granting</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6221</td>
+      <td>Security broker/dealer</td>
+      <td>6612</td>
+      <td>Security and commodity contracts brokerage</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6231</td>
+      <td>Security/commodity exchange</td>
+      <td>6499</td>
+      <td>Other financial service activities, except insurance and pension funding n.e.c.</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6282</td>
+      <td>Investment advisory service</td>
+      <td>6430</td>
+      <td>Trusts, funds and similar financial entities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6289</td>
+      <td>Investment advisory service</td>
+      <td>6430</td>
+      <td>Trusts, funds and similar financial entities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6311</td>
+      <td>Life insurance carrier</td>
+      <td>6511</td>
+      <td>Life insurance</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6321</td>
+      <td>Accident/health insurance carrier</td>
+      <td>6512</td>
+      <td>Non-life insurance</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6324</td>
+      <td>Hospital/medical service plan</td>
+      <td>6512</td>
+      <td>Non-life insurance</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6331</td>
+      <td>Fire/casualty insurance carrier</td>
+      <td>6512</td>
+      <td>Non-life insurance</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6351</td>
+      <td>Surety insurance carrier</td>
+      <td>6512</td>
+      <td>Non-life insurance</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6411</td>
+      <td>Insurance agent/broker</td>
+      <td>6620</td>
+      <td>Activities auxiliary to insurance and pension funding</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6512</td>
+      <td>Nonresidential building operator</td>
+      <td>6832</td>
+      <td>Management of real estate on a fee or contract basis</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6513</td>
+      <td>Apartment building operator</td>
+      <td>8810</td>
+      <td>Social work activities without accommodation for the elderly and disabled</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6514</td>
+      <td>Dwelling operator</td>
+      <td>6832</td>
+      <td>Management of real estate on a fee or contract basis</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6517</td>
+      <td>Railroad property lessor</td>
+      <td>6820</td>
+      <td>Renting and operating of own or leased real estate</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6519</td>
+      <td>Real property lessor</td>
+      <td>6820</td>
+      <td>Renting and operating of own or leased real estate</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6531</td>
+      <td>Real estate agent/manager</td>
+      <td>6831</td>
+      <td>Real estate agencies</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6552</td>
+      <td>Subdivider/developer</td>
+      <td>4110</td>
+      <td>Development of building projects</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6719</td>
+      <td>Holding company</td>
+      <td>6420</td>
+      <td>Activities of holding companies</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6726</td>
+      <td>Closed-end investment office</td>
+      <td>6430</td>
+      <td>Trusts, funds and similar financial entities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6798</td>
+      <td>Real estate investment trust</td>
+      <td>6630</td>
+      <td>Fund management activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>6799</td>
+      <td>Investor</td>
+      <td>6430</td>
+      <td>Trusts, funds and similar financial entities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7011</td>
+      <td>Hotel/motel operation</td>
+      <td>5510</td>
+      <td>Hotels and similar accommodation</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7032</td>
+      <td>Sport/recreation camp</td>
+      <td>5520</td>
+      <td>Holiday and other short-stay accommodation</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7211</td>
+      <td>Power laundry</td>
+      <td>9601</td>
+      <td>Washing and (dry-)cleaning of textile and fur products</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7231</td>
+      <td>Beauty shop</td>
+      <td>9602</td>
+      <td>Hairdressing and other beauty treatment</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7311</td>
+      <td>Advertising agency</td>
+      <td>7311</td>
+      <td>Advertising agencies</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7312</td>
+      <td>Outdoor advertising services</td>
+      <td>7311</td>
+      <td>Advertising agencies</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7313</td>
+      <td>Advertising representative</td>
+      <td>7312</td>
+      <td>Media representation</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7319</td>
+      <td>Advertising services</td>
+      <td>7311</td>
+      <td>Advertising agencies</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7353</td>
+      <td>Heavy construction equipment rental</td>
+      <td>7732</td>
+      <td>Renting and leasing of construction and civil engineering machinery and equipment</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7359</td>
+      <td>Equipment rental/leasing</td>
+      <td>7729</td>
+      <td>Renting and leasing of other personal and household goods</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7361</td>
+      <td>Employment agency</td>
+      <td>7810</td>
+      <td>Activities of employment placement agencies</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7371</td>
+      <td>Custom computer programing</td>
+      <td>6201</td>
+      <td>Computer programming activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7372</td>
+      <td>Prepackaged software services</td>
+      <td>5820</td>
+      <td>Software publishing</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7373</td>
+      <td>Computer systems design</td>
+      <td>6202</td>
+      <td>Computer consultancy activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7374</td>
+      <td>Data processing/preparation</td>
+      <td>6311</td>
+      <td>Data processing, hosting and related activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7375</td>
+      <td>Information retrieval services</td>
+      <td>6310</td>
+      <td>Data processing, hosting and related activities, web portals</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7379</td>
+      <td>Computer related services</td>
+      <td>6209</td>
+      <td>Other information technology and computer service activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7381</td>
+      <td>Detective/armored car services</td>
+      <td>8010</td>
+      <td>Private security activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7382</td>
+      <td>Security systems services</td>
+      <td>8020</td>
+      <td>Security systems service activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7389</td>
+      <td>Business services</td>
+      <td>8299</td>
+      <td>Other business support service activities n.e.c.</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7514</td>
+      <td>Passenger car rental</td>
+      <td>7711</td>
+      <td>Renting and leasing of cars and light motor vehicles</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7515</td>
+      <td>Passenger car leasing</td>
+      <td>7711</td>
+      <td>Renting and leasing of cars and light motor vehicles</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7812</td>
+      <td>Motion picture/video production</td>
+      <td>5911</td>
+      <td>Motion picture, video and television programme production activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7819</td>
+      <td>Motion picture services</td>
+      <td>5912</td>
+      <td>Motion picture, video and television programme post-production activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7822</td>
+      <td>Motion picture/tape distribution</td>
+      <td>5913</td>
+      <td>Motion picture, video and television programme distribution activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7829</td>
+      <td>Motion picture distribution services</td>
+      <td>5913</td>
+      <td>Motion picture, video and television programme distribution activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7832</td>
+      <td>Motion picture theater</td>
+      <td>5914</td>
+      <td>Motion picture projection activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7922</td>
+      <td>Theatrical producers/services</td>
+      <td>9001</td>
+      <td>Performing arts</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7929</td>
+      <td>Entertainer/entertainment group</td>
+      <td>9329</td>
+      <td>Other amusement and recreation activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7941</td>
+      <td>Sports club/manager/promoter</td>
+      <td>9319</td>
+      <td>Other sports activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>7999</td>
+      <td>Amusement/recreation services</td>
+      <td>9329</td>
+      <td>Other amusement and recreation activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>8011</td>
+      <td>Medical doctor's office</td>
+      <td>8621</td>
+      <td>General medical practice activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>8042</td>
+      <td>Optometrist's office</td>
+      <td>8690</td>
+      <td>Other human health activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>8051</td>
+      <td>Skilled nursing care facility</td>
+      <td>8690</td>
+      <td>Other human health activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>8059</td>
+      <td>Nursing/personal care</td>
+      <td>8710</td>
+      <td>Residential nursing care activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>8062</td>
+      <td>General hospital</td>
+      <td>8610</td>
+      <td>Hospital activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>8069</td>
+      <td>Specialty hospital</td>
+      <td>8610</td>
+      <td>Hospital activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>8071</td>
+      <td>Medical laboratory</td>
+      <td>8690</td>
+      <td>Other human health activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>8082</td>
+      <td>Home health care services</td>
+      <td>8690</td>
+      <td>Other human health activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>8092</td>
+      <td>Kidney dialysis centers</td>
+      <td>8690</td>
+      <td>Other human health activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>8099</td>
+      <td>Health/allied services</td>
+      <td>8690</td>
+      <td>Other human health activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>8211</td>
+      <td>Elementary/secondary school</td>
+      <td>8520</td>
+      <td>Primary education</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>8243</td>
+      <td>Data processing school</td>
+      <td>8532</td>
+      <td>Technical and vocational secondary education</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>8299</td>
+      <td>School/educational services</td>
+      <td>8559</td>
+      <td>Other education n.e.c.</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>8331</td>
+      <td>Job training/related services</td>
+      <td>8559</td>
+      <td>Other education n.e.c.</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>8361</td>
+      <td>Residential care services</td>
+      <td>8710</td>
+      <td>Residential nursing care activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>8422</td>
+      <td>Botanical/zoological garden</td>
+      <td>9104</td>
+      <td>Botanical and zoological gardens and nature reserves activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>8711</td>
+      <td>Engineering services</td>
+      <td>7112</td>
+      <td>Engineering activities and related technical consultancy</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>8731</td>
+      <td>Commercial physical research</td>
+      <td>7211</td>
+      <td>Research and experimental development on biotechnology</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>8732</td>
+      <td>Commercial nonphysical research</td>
+      <td>7220</td>
+      <td>Research and experimental development on social sciences and humanities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>8742</td>
+      <td>Management consulting services</td>
+      <td>7022</td>
+      <td>Business and other management consultancy activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>8748</td>
+      <td>Business consulting services</td>
+      <td>7022</td>
+      <td>Business and other management consultancy activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>8999</td>
+      <td>Services-misc</td>
+      <td>9609</td>
+      <td>Other personal service activities n.e.c.</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>9441</td>
+      <td>Administrative social/manpower programs</td>
+      <td>8430</td>
+      <td>Compulsory social security activities</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+    <tr>
+      <td>9721</td>
+      <td>International affairs</td>
+      <td>9900</td>
+      <td>Activities of extraterritorial organisations and bodies</td>
+      <td>Outside-EU ETS</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <h2>Download the Excel File</h2>
+    <a href="SICcode1.xlsx" download>Download the original Excel file</a>
+</body>
+</html>
